@@ -1,0 +1,1574 @@
+
+ 
+
+
+
+
+
+
+Subject Name	:CSE
+Subject code	:102
+
+
+
+
+
+
+Lab report-02
+
+
+
+
+
+Submitted By	Submitted to
+Name: Md. Mehedi Hasan	MD. Mahbub-Or- Rashid
+ID NO: 21225103334	Lecturer
+Department: CSE	Department of CSE
+Section: 8 Intake: 49	Bangladesh University
+Bangladesh University	of Business And
+of business and	Technology
+Technology	
+ 
+
+S.L	Problem Name
+01	C "Hello, World!" Program
+02	C Program to Print an Integer,float,double (Entered by the User)
+03	C program to find the Sizeof int,float,double,character.
+04	C program to find the ASCII value of character.
+05	C program to convert Decimal to Octal,Octal to Decimal.
+06	C program to convert Decimal to Hexa-decimal,Hexa-decimal to Decimal.
+07	C program to find Sum and Average of 3 numbers.
+08	C program to perform addition, subtraction, multiplication,remainder and division of two numbers.
+09	C program to find Area of a Triangle.
+10	C program to find Area of a Triangle given Three Sides.
+11	C program to find Area of a Rectangle.
+12	C program to find Area of a Circle
+13	C program to convert Celsius temperature To Fahrenheit temperature, convert Fahrenheit temperature To Celsius temperature.
+14	C program on how to swap Two numbers with temporary variables.
+15	C program of X raised to the power (X^Y).
+16	C program to check whether a number is positive or negative.
+17	C program to find the Largest number among two numbers.
+18	C program to check whether a number is Even or Odd.
+19	C program to check whether a year is Leap year or not
+20	C program to check whether a letter is Capital or Small.
+21	C program to check whether a letter is Vowel or Consonant.(using switch operator).
+22	C program that read a digit and display its spelling.(using switch operator)
+23	C program to accept the height of a person (in cm) and categorize the person according to their height.
+24	C program to read any Month Number in integer and display Month name with days .
+25	C program to accept a coordinate point in a XY coordinate system and determine in which quadrant the coordinate point lies.
+26	C program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
+27	C program to print even numbers between 1-n number (using loop).
+28	C program to display Multipication Table of a given integer
+29	C program to find Factorial of a number.
+30	C program to find the GCD & LCM of two integers.
+31	C program that read any positive integer and display Sum Of Digits.
+32	C program that Reverse an integer number.
+ 
+
+33	C program that Reverse an integer number.
+34	C program to check an integer number if it is Palindrome Number or not.
+35	C program to check the given number is Armstrong or not.
+36	C program to check the given number is Strong Number or not.
+37	C program to find the Maximum between two numbers using Function.
+38	C program to find Factorial of a given number using Function.
+39	C program to display Fibonacci Series using Function.
+40	C program to display Sum of Natural Numbers.
+41	C program to display Sum of Even Numbers between 2-10.
+42	C program to display Sum of Odd Numbers between 1-10.
+43	C program to display the addition of two matrix
+44	C program to display the Fibonacci Series (using array).
+45	C program that can take some numbers and display maximum and minimum (using array).
+46	C program to calculate the sum & average of given numbers and values of the given number from the user.
+47	C program to find the length of a string using strlen() funcion.
+48	C program that input a name and display the string and display string character wise.
+49	C program to copy string using strcpy() function.
+50	C program of concatenation string by using strcat() function.
+51	C program to compare strings whether they are equal or not by using strcmp() function.
+52	C program to reverse a string by using strrev() function.
+53	C program to swap two strings.
+54	C program to count the number of Vowels,Consonants,Digits & Letter.
+
+
+Problem No:1
+Problem Name: C "Hello, World!" Program
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+ 
+
+{
+
+printf("Hello world!\n"); return 0;
+}
+
+Output:
+
+
+Problem No:02
+
+Problem Name: C Program to Print an Integer,float,double (Entered by the User)
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h>
+
+int main()
+
+{
+
+int number;
+
+printf("Enter integer number=");
+ 
+
+scanf("%d",&number); float digit;
+printf("Enter Float Number="); scanf("%f",&digit);
+double dbl;
+printf("Enter Double Number="); scanf("%lf",&dbl);
+printf("Your integer number=\n%d",number); printf("Your Float number=%f\n",digit); printf("Your double number=%lf\n",dbl); return 0;
+}
+
+Output:
+
+
+Problem No:03
+
+Problem Name: C program to find the Sizeof int,float,double,character.
+
+Solution:
+ 
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int inttype; float floattype;
+double doubletype; char chartype;
+printf("Size of int: %zu bytes\n", sizeof(inttype)); printf("Size of float: %zu bytes\n", sizeof(floattype)); printf("Size of doule %zu bytes\n", sizeof(doubletype)); printf("Size of char %zu bytes\n", sizeof(chartype)); return 0;
+}
+
+Output:
+
+ 
+
+Problem No:04
+
+Problem Name: C program to find the ASCII value of character.Solution.
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char mehedi;
+
+printf("Enter a character="); scanf("%c",&mehedi);
+printf("ASCII VALUE OF %c=%d",mehedi,mehedi); return 0;
+}
+
+Output:
+
+
+Problem No:05
+
+Problem Name: C program to convert Decimal to Octal,Octal to Decimal.
+ 
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int n;
+
+printf("Enter decimel Number="); scanf("%d",&n);
+printf("Your Octal value=%o\n",n); int o;
+printf("Enter Octal Number="); scanf("%o",&o);
+printf("Your decimel value=%d\n",o); return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:06
+
+Problem Name: C program to convert Decimal to Hexa-decimal,Hexa-decimal to Decimal.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int n;
+
+printf("Enter decimel Number="); scanf("%d",&n);
+printf("Your Octal value=%x\n",n); int x;
+printf("Enter Octal Number="); scanf("%x",&x);
+ 
+
+printf("Your decimel value=%d\n",x); return 0;
+}
+
+Output:
+
+
+Problem No:07
+
+Problem Name: C program to find Sum and Average of 3 numbers.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int a,b,c; int sum=0; float avg;
+printf("Enter A=");
+ 
+
+scanf("%d",&a); printf("Enter B="); scanf("%d",&b); printf("Enter C="); scanf("%d",&c);\ sum=a+b+c;
+printf("Total Sum=%d\n",sum); avg=sum/3;
+printf("Total Average=%f\n",avg); return 0;
+}
+
+Output:
+
+
+Problem No:08
+
+Problem Name: C program to perform addition, subtraction, multiplication,remainder and division of two numbers.
+Solution:
+ 
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int a,b,result; int sum=0; float avg;
+printf("Enter A="); scanf("%d",&a); printf("Enter B="); scanf("%d",&b); result=a+b;
+printf("Addition of a and b=%d\n",result); result=a-b;
+printf("Substraction of a and b=%d\n",result); result=a*b;
+printf("Multipication of a and b=%d\n",result); result=a/b;
+printf("Division of a and b=%d\n",result); result=a%b;
+printf("Remainder of a and b = %d\n",result); return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:09
+
+Problem Name: C program to find Area of a Triangle.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+float base,height,area; printf("Enter Base of Triangel="); scanf("%f",&base);
+printf("Enter Height of Triangel="); scanf("%f",&height); area=0.5*base*height;
+printf("The area of triangle=%f\n",area); return 0;
+ 
+
+}
+
+Output:
+
+
+Problem No:1o
+
+Problem Name: C program to find Area of a Triangle given Three Sides.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> #include<math.h> int main()
+{
+
+float a,b,c,S,area;
+
+printf("Enter three base of triangle="); scanf("%f %f %f",&a,&b,&c); S=(a+b+c)/2 ;
+area=sqrt(S*(S-a)*(S-b)*(S-c)) ;
+ 
+
+printf("Area of triangle=%f\n",area); return 0;
+}
+
+Output:
+
+
+
+Problem No:11
+
+Problem Name :C program to find Area of a Rectangle.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+float height,width,area;
+
+printf("Enter Height of a Rectangle="); scanf("%f",&height);
+ 
+
+printf("Enter Width of a Rectangle="); scanf("%f",&width); area=height*width;
+printf("Area of Rectangle=%f\n",area); return 0;
+}Output:
+
+
+Problem No:12
+
+Problem Name : C program to find Area of a Circle.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+float area,r; printf("Enter R="); scanf("%f",&r); area=3.1416*r*r;
+ 
+
+printf("Area=%f",area); return 0;
+}
+
+Output;
+
+
+Problem No:13
+
+Problem Name : C program to convert Celsius temperature To Fahrenheit temperature, convert Fahrenheit temperature To Celsius temperature.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+float C,F;
+
+printf("Enter Celsius Temperature : "); scanf("%f",&C);
+F=(C*1.8)+32 ;
+
+printf("Fahrenheit Temperature is = %.2f\n",F);
+ 
+
+printf("Enter Fahrenheit Temperature : "); scanf("%f",&F);
+C=(F-32)*5/9;
+
+printf("Celsius Temperature is = %.2f\n",C);
+
+
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:14
+
+Problem Name : C program on how to swap Two numbers with temporary variables.Solution:
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+ 
+
+int first,second,temp; printf("Enter the First Number : "); scanf("%d",&first);
+printf("Enter the Second Number : "); scanf("%d",&second);
+temp=first; first=second; second=temp;
+printf("After Swapping , First Number : %d\n",first); printf("After Swapping , Second Number : %d\n",second); return 0;
+}
+
+Output:
+
+
+Problem No:15
+
+Problem Name : C program of X raised to the power (X^Y)
+
+Solution:
+ 
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int x,y,power; printf("EnterX="); scanf("%d",&x); printf("EnterY ="); scanf("%d",&y); power=pow(x,y);
+printf("X raised to the power Y (X^Y) = %d\n",power); return 0;
+}
+
+Output:
+
+
+Problem No:16
+ 
+
+Problem Name : C program to check whether a number is positive or negative.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num;
+
+printf("Enter any Number : "); scanf("%d",&num);  if(num>0)
+printf("Positive (+) Number"); else if(num<0) printf("Negative(-) Number"); else
+printf("0"); return 0;
+}	Output:
+
+ 
+
+Problem No:17
+
+Problem Name : C program to find the Largest number among two numbers.
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num1,num2;
+
+printf("Enter Two numbers = "); scanf("%d %d",&num1,&num2); if(num1>num2)
+printf("Large Number = %d\n",num1); else if(num1<num2)
+printf("Large Number = %d\n",num2); else
+printf("Numbers are Equal\n"); return 0;}	Output:
+ 
+
+Problem No:18
+ 
+
+Problem Name : C program to check whether a number is Even or Odd.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num;
+
+printf("Enter any value : "); scanf("%d",&num); if(num%2==0)
+printf(" This is Even Number"); else
+printf("this is Odd Number");
+return 0;	}	Output:
+
+
+Problem No:19
+
+Problem Name : C program to check whether a year is Leap year or not
+ 
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int year;
+
+printf("Enter any Year : "); scanf("%d",&year); if(year%400==0) printf("Leap Year");
+else if(year%4==0 && year%100!=0) printf("This year is Leap Year");
+else
+printf("This Year is Not Leap Year"); return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:20
+
+Problem Name : C program to check whether a letter is Capital or Small.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char ch;
+
+printf("Enter any Letter : "); scanf("%c",&ch); if(ch>='A' && ch<='Z') printf("Capital Letter"); else if(ch>='a' && ch<='z') printf("It is a Small Letter"); else
+ 
+
+printf("It is Not a Letter"); return 0;
+}
+
+Output:
+
+
+Problem No:21
+
+Problem Name : C program to check whether a letter is Vowel or Consonant.(using switch operator)
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+char ch;
+printf("Enter any Letter : "); scanf("%c",&ch);
+ 
+
+switch(ch)
+
+{
+case'a':
+
+case'e':
+
+case'i':
+
+case'o':
+case'u':
+
+case'A':
+
+case'E':
+
+case'I':
+case'O':
+
+case'U':
+
+printf("\t Vowel\n"); break ;
+default :
+
+printf("\t Consonant\n");
+
+}
+
+return 0;
+
+}
+
+Output:
+ 
+
+ 
+
+Problem No:22
+
+Problem Name : C program that read a digit and display its spelling.(using switch operator)
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int digit;
+
+printf("Enter any Digit : "); scanf("%d",&digit); switch(digit)
+{
+
+case 0 : printf("Zero\n");
+ 
+
+break; case 1:
+printf("One\n"); break;
+case 2 : printf("Two\n"); break;
+case 3 : printf("Three\n"); break;
+case 4 : printf("Four\n"); break;
+case 5 : printf("Five\n"); break;
+case 6 : printf("Six\n"); break;
+case 7 : printf("Seven\n"); break;
+case 8 : printf("Eight\n"); break;
+case 9 :
+ 
+
+printf("Nine\n"); break;
+default:
+
+printf("Not a valid Digit\n");
+}
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:23
+
+Problem Name : C program to accept the height of a person (in cm) and categorize the person according to their height.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+float height;
+ 
+
+printf("Enter the Height of the person (in cm) : "); scanf("%f",&height);
+if(height<150)
+
+printf("The person is Dwarf.\n");
+else if(height >=150 && height <165) printf("The person is Average Heighted.\n"); else if(height >=165 && height<=195) printf("The person is Taller.\n");
+else
+
+printf("Abnormal Height.n"); return 0;	}	Output:
+ 
+
+Problem No:24
+
+Problem Name : C program to read any Month Number in integer and display Month name with days .
+Solution: Input:
+ 
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+{
+
+int month;
+
+printf("Input Month No (1-12) : "); scanf("%d",&month); switch(month)
+{
+
+case 1:
+
+printf("January (31 Days)\n"); break;
+case 2:
+
+printf("February (28/29 Days)\n"); break;
+case 3:
+
+printf("March (31)\n"); break;
+case 4:
+
+printf("April (30 Days)\n"); break;
+case 5:
+printf("May (31 Days)\n"); break;
+case 6:
+ 
+
+printf("June (30 Days)\n"); break;
+case 7:
+
+printf("July (31 DAys)\n"); break;
+case 8:
+printf("August (31 DAys)\n"); break;
+case 9:
+
+printf("September (30 Days)\n"); break;
+case 10:
+
+printf("October (31 Days)\n"); break;
+case 11:
+
+printf("November (30 Days)\n"); break;
+case 12:
+printf("December (31 Days)\n"); break;
+default:
+
+printf("Invalid Month number. \nPlease try again…Enter integer between (1-12)
+....\n");
+break;
+
+}
+
+}
+ 
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:25
+
+Problem Name : C program to accept a coordinate point in a XY coordinate system and determine in which quadrant the coordinate point lies.
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int co1,co2;
+printf("Input the values for X and Y coordinate : "); scanf("%d %d",&co1,&co2);
+if( co1 > 0 && co2 > 0)
+ 
+
+printf("The coordinate point (%d,%d) lies in the First quandrant.\n",co1,co2); else if( co1 < 0 && co2 > 0)
+printf("The coordinate point (%d,%d) lies in the Second quandrant.\n",co1,co2); else if( co1 < 0 && co2 < 0)
+printf("The coordinate point (%d, %d) lies in the Third quandrant.\n",co1,co2); else if( co1 > 0 && co2 < 0)
+printf("The coordinate point (%d,%d) lies in the Fourth quandrant.\n",co1,co2); else if( co1 == 0 && co2 == 0)
+printf("The coordinate point (%d,%d) lies at the origin.\n",co1,co2); return 0;
+}
+
+Output:
+
+
+Problem No:26
+
+Problem Name : C program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
+Solution:
+ 
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int vote_age;
+printf("Input the age of the candidate : "); scanf("%d",&vote_age);
+if (vote_age<18)
+
+{
+
+printf("Sorry, You are not eligible to caste your vote.\n");
+
+printf("You would be able to caste your vote after %d year.\n",18-vote_age);
+
+}
+
+else
+printf("Congratulation! You are eligible for casting your vote.\n"); return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:27
+
+Problem Name : C program to print even numbers between 1-n number (using loop).
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int i,n;
+
+printf("Print all Even Numbers till : "); scanf("%d",&n);
+for(i=2 ; i <=n ; i++)
+
+{ if(i%2==0)
+printf("%d\n",i);
+ 
+
+}
+
+return 0;
+}
+
+Output:
+
+
+Problem No:28
+
+Problem Name : C program to display Multipication Table of a given integer
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,i;
+
+printf("Enter any number : "); scanf("%d",&num);
+for(i=1 ; i<=10 ; i++)
+ 
+
+{
+
+printf("%d x %d = %d\n",num,i,num*i);
+}
+
+return 0;
+
+}	Output:
+
+Problem No:29
+Problem Name : C program to find Factorial of a number. Solution:
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int i,fact=1,num;
+
+printf("Enter any Positive Number : "); scanf("%d",&num);
+ 
+
+for(i=1 ; i<=num ; i++)
+
+{
+fact=fact*i;
+
+}
+
+printf("%d\n",fact);
+
+return 0;	}	Output:
+
+
+Problem No:30
+
+Problem Name : C program to check whether a number is Prime or not.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,count=0,i; printf("Enter any number = "); scanf("%d",&num);
+for(i=2; i<num ; i++)
+ 
+
+{
+
+if(num%i==0)
+{
+
+count++; break;
+}
+
+}
+
+if (count==0) printf("Prime Number\n"); else
+printf("Not a Prime Number\n"); return 0;
+}
+Output:
+
+
+Problem No:31
+
+Problem Name : C program to find the GCD & LCM of two integers.
+ 
+
+Solution:
+
+Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num1,num2,n1,n2,rem,gcd,lcm ; printf("Enter Two numbers = ") ; scanf("%d %d",&num1,&num2) ; n1=num1 ;
+n2=num2 ; while(n2!=0)
+{
+rem = n1 % n2 ; n1 = n2 ;
+n2 = rem ;
+
+}
+gcd = n1 ;
+
+printf("GCD = %d\n",gcd) ; lcm = (num1*num2)/gcd ; printf("LCM = %d\n",lcm) ;
+return 0;
+
+}
+
+Output:
+ 
+
+ 
+
+
+
+Problem No:32
+
+Problem Name : C program that read any positive integer and display Sum Of Digits.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,temp,r,sum=0 ; printf("Enter any number = ") ; scanf("%d",&num) ;
+temp = num ; while(temp!= 0)
+{
+ 
+
+r = temp%10 ; sum = sum+r ; temp = temp/10 ;
+}
+printf("Sum of Digits = %d\n",sum) ; return 0;
+}
+
+Output:
+
+
+Problem No:33
+
+Problem Name : C program that Reverse an integer number
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+ 
+
+int num,temp,r,sum=0 ; printf("Enter any number = ") ; scanf("%d",&num) ;
+temp = num ; while(temp!= 0)
+{
+
+r = temp%10 ; sum = sum*10+r ; temp = temp/10 ;
+}
+printf("Reverse of Integer Number = %d\n",sum) ; return 0;
+}
+Output:
+
+
+Problem No:34
+ 
+
+Problem Name : C program to check an integer number if it is Palindrome Number or not.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,temp,r,sum=0 ; printf("Enter any number = ") ; scanf("%d",&num) ;
+temp = num ; while(temp!= 0)
+{
+r = temp%10 ; sum = sum*10+r ; temp = temp/10 ;
+}
+
+if(num==sum) printf("Palindrome Number") ; else
+printf("Not Palindrome Number"); return 0;	}	Output:
+ 
+
+ 
+
+Problem No:35
+
+Problem Name : C program to check the given number is Armstrong or not.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,temp,r,sum=0 ; printf("Enter any number = ") ; scanf("%d",&num) ;
+temp = num ; while(temp!= 0)
+{
+r = temp%10 ; sum = sum+r*r*r ; temp = temp/10 ;
+}
+ 
+
+if(sum==num) printf("Armstrong Number"); else
+printf("Not Armstrong Number"); return 0;
+}
+Output:
+
+
+Problem No:36
+
+Problem Name : C program to check the given number is Strong Number or not.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,temp,rem,sum=0,i,fact;
+ 
+
+printf("Enter any number = ") ; scanf("%d",&num) ;
+temp = num ; while(temp!= 0)
+{
+rem = temp%10 ; fact=1;
+for(i=1 ; i<=rem ; i++)
+
+{
+
+fact=fact*i;
+
+}
+
+sum=sum+fact; temp=temp/10;
+}
+
+if(sum==num)
+
+printf("%d is a Strong Number.\n",num); else
+printf("%d is Not a Strong Number.\n",num); return 0;	}	Output:
+ 
+
+ 
+
+Problem No:37
+
+Problem Name : C program to find the Maximum between two numbers using Function.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int result; if(num1>num2) result=num1; else result=num2;
+}
+
+int main()
+ 
+
+{
+
+int a,b;
+printf("Enter Two Numbers : "); scanf("%d %d",&a,&b);
+int ret; ret=max(a,b);
+printf("Maximum Value is : %d\n",ret);
+
+
+
+return 0;
+
+}
+
+Output:
+
+#include <stdio.h>
+
+int max(int num1,int num2)
+
+{
+
+int result; if(num1>num2) result=num1; else result=num2;
+}
+
+int main()
+{
+
+int a,b;
+
+printf("Enter Two Numbers : "); scanf("%d %d",&a,&b);
+int ret;
+ 
+
+ret=max(a,b);
+
+printf("Maximum Value is : %d\n",ret); return 0;
+}
+Output:
+
+
+Problem No:38
+
+Problem Name : C program to find Factorial of a given number using Function.
+
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+printf("Enter any integer number: ");
+
+printf("Factorial of the Given Number is: %d\n",fact()); return 0;
+ 
+
+}
+
+int fact()
+{
+
+int i,fact=1,num; scanf("%d",&num); for(i=1; i<=num; i++)
+{
+
+fact=fact*i;
+
+}
+return fact; return 0;
+}
+Output:
+
+
+Problem No:39
+
+Problem Name : C program to display Fibonacci Series using Function.
+
+Solution:
+ 
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+int first=0,second=1,fibo=0,n; printf("Enter a positive number: "); scanf("%d",&n);
+printf("Fibonacci Series: %d\n %d\n",first,second); fibo=first+second;
+while (fibo <=n)
+
+{
+
+printf(" %d\n",fibo); first=second; second=fibo; fibo=first+second;
+}	return 0;	}	Output:
+
+ 
+
+Problem No:40
+
+Problem Name : C program to display Sum of Natural Numbers.
+
+Solution:
+
+Input:
+
+#include <stdio.h> int main()
+{
+int first=0,second=1,fibo=0,n; printf("Enter a positive number: "); scanf("%d",&n);
+printf("Fibonacci Series: %d\n %d\n",first,second); fibo=first+second;
+while (fibo <=n)
+{
+
+printf(" %d\n",fibo); first=second; second=fibo; fibo=first+second;
+}
+
+return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:41
+
+Problem Name : C program to display Sum of Even Numbers between 2-10. Solution:
+Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+int num,sum=0,i;
+
+printf("Enter the value of Number : "); scanf("%d",&num); for(i=2;i<=num;i=i+2)
+{
+
+sum=sum+i;
+
+}
+
+printf("Sum of Even Numbers : %d",sum);
+ 
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:42
+
+Problem Name : C program to display Sum of Odd Numbers between 1-10.
+
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int num,sum=0,i;
+
+printf("Enter the value of Number : "); scanf("%d",&num);
+for(i=1 ; i <=num ; i =i+2)
+
+{
+ 
+
+sum=sum+i;
+
+}
+printf("Sum of Odd Numbers = %d\n",sum); return 0;
+}
+
+Output:
+
+Problem No:43
+Problem Name : C program to display the addition of two matrix Solution:
+Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int numOfRows, numOfcol, i, j; int A[10][10] ,B[10][10], C[10][10];
+ 
+
+printf("Enter the number of Rows and Columns : "); scanf("%d %d",&numOfRows,&numOfcol);
+//Scanning A Matrix
+
+printf("Enter the elements of A matrix :\n"); for(i=0 ; i<numOfRows ; i++)
+{
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+printf("A[%d][%d]=",i,j);
+
+scanf("%d",&A[i][j]);
+}
+
+printf("\n");
+
+}
+
+//Scanning B Matrix
+printf("Enter the elements of B matrix:\n"); for(i=0 ; i<numOfRows ; i++)
+{
+
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+printf("B[%d][%d]=",i,j);
+
+scanf("%d",&B[i][j]);
+
+}
+
+printf("\n");
+}
+
+//Printing A Matrix printf("A = ");
+ 
+
+for(i= 0; i<numOfRows ; i++)
+
+{
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+printf("%d\t",A[i][j]);
+
+}
+printf("\n ");
+
+}
+
+//Printing B Matrix printf("\nB = ");
+for(i=0 ; i<numOfRows ; i++)
+
+{
+
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+printf("%d\t",B[i][j]);
+
+}
+
+printf("\n ");
+
+}
+// ADDING THE MATRIX TO C= A+B
+
+for(i=0 ; i<numOfRows ; i++)
+
+{
+
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+C[i][j] = A[i][j] + B[i][j];
+
+}
+
+}
+ 
+
+//Printing C Matrix...C=A+B printf("\n A+B = ");
+for(i=0 ; i<numOfRows ; i++)
+
+{
+for(j=0 ; j<numOfcol ; j++)
+
+{
+
+printf("%d",C[i][j]);
+
+}
+printf("\t\n");
+
+printf("\t");
+
+}
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:44
+
+Problem Name : C program to display the Fibonacci Series (using array).
+ 
+
+Solution:
+
+Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int fibo[30], i, n;
+
+printf("How many Fibonacci Series? :\n"); scanf("%d",&n);
+fibo[0]=0; fibo[1]=1;
+for(i=2 ; i<n ; i++)
+{
+
+fibo[i]= fibo[i-1] + fibo[i-2];
+}
+
+printf("\n"); for(i=0 ; i<n ; i++)
+{
+printf("%d\t",fibo[i]);
+
+}
+
+return 0;
+
+}
+
+Output:
+ 
+
+ 
+
+Problem No:45
+
+Problem Name : C program that can take some numbers and display maximum and minimum (using array).
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{ int num[100], n, i, max, min ; printf("How many numbers? :\n"); scanf("%d",&n);
+printf("Enter the values of numbers :\n"); for(i=0 ; i<n ; i++)
+{
+scanf("%d",&num[i]);
+
+}
+ 
+
+max=num[0]; min=num[0]; for(i=1 ; i<n ; i++)
+{
+
+if(max < num[i]) max=num[i] ;
+if (min > num[i]) min=num[i];
+}
+printf("Maximum =%d\n",max); printf("Minimum =%d\n",min);
+return 0;
+
+}
+
+Output:
+
+
+Problem No:46
+ 
+
+Problem Name : C program to calculate the sum & average of given numbers and values of the given number from the user.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+int a[100], sum=0, i, n; printf("How Many Numbers ? : \n"); scanf("%d",&n);
+printf("Enter the value of indexes :\n "); for(i=0 ; i<n ; i++)
+{
+printf("a[%d]=",i);
+
+scanf("%d",&a[i]);
+
+}
+
+for(i=0 ; i<n ; i++)
+
+{
+
+sum=sum+a[i];
+}
+
+printf("The Sum is = %d\n",sum);
+printf("The Average is = %.2f\n",(float)sum/n); return 0;
+}
+
+Output:
+ 
+
+ 
+
+
+
+Problem No:47
+
+Problem Name : C program to find the length of a string using strlen() funcion. Solution:
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char s1[]="Mehedi Hasan" ; printf("your name=%s\n",s1); int length = strlen(s1) ; printf("Length = %d\n",length);
+return 0;
+
+}:
+
+Output:
+ 
+
+ 
+
+Problem No:48
+
+Problem Name : C program that input a name and display the string and display string character wise.
+Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{ char s1[30];
+printf("Enter your full name : "); gets(s1);
+printf("Full name is = %s\n",s1); int i= 0 ;
+while(s1[i] != '\0')
+{
+
+printf("%c\n",s1[i]);
+ 
+
+i++ ;
+
+}
+
+return 0;
+
+}
+
+Output:
+
+
+Problem No:49
+
+Problem Name : C program to copy string using strcpy() function.
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+char source[50]; printf("Input\t"); gets(source);
+ 
+
+char target[20]; strcpy(target,source);  printf("Source String =%s\n",source); printf("Target String =%s\n",target);
+return 0;
+
+}
+Output:
+
+Problem No:50
+
+Problem Name : C program of concatenation string by using strcat() function. Solution:
+Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+char str1[50];
+ 
+
+printf("first Name="); gets(str1);
+char str2[50]; printf("Last Name="); gets(str2); strcat(str1,str2);
+printf("Concatenation String = %s\n",str1); return 0;
+}
+Output:
+
+
+Problem No:51
+
+Problem Name : C program to compare strings whether they are equal or not by using strcmp() function.
+Solution: Input:
+#include <stdio.h>
+ 
+
+#include <stdlib.h> int main()
+{
+
+char str1[50]; printf("first Name="); gets(str1);
+char str2[50]; printf("Last Name="); gets(str2);
+int d= strcmp(str1,str2); if (d==0)
+{
+printf("String are equal.");
+
+}
+else
+
+printf("Strings are not equal."); return 0;	} Output:
+ 
+ 
+
+Problem No:52
+
+Problem Name : C program to reverse a string by using strrev() function. Solution:
+
+Input:
+
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char str1[50]; printf("first Name="); gets(str1); strrev(str1);
+printf("Reverse String = %s\n",str1); return 0;
+}	Output:
+
+
+Problem No:53
+
+Problem Name : : C program to swap two strings.
+ 
+
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char str1[50]; printf("first Name="); gets(str1);
+char str2[50]; printf("Last Name="); gets(str2);
+char temp[100]; strcpy(temp,str1); strcpy(str1,str2); strcpy(str2,temp); printf("\nAfter Swapping\n"); printf("First Name = %s\n",str1); printf("Last name = %s\n",str2); return 0;
+}
+
+Output:
+ 
+
+ 
+
+Problem No:54
+
+Problem Name : C program to count the number of Vowels,Consonants,Digits & Letter.
+Solution: Input:
+#include <stdio.h> #include <stdlib.h> int main()
+{
+
+char name[100],ch;
+
+int i, vowel, consonant, digit,letter ,other ; digit=consonant=vowel=other=letter= 0; printf("Enter any sentence : "); gets(name);
+while((ch=name[i])!='\0')
+
+{ {
+ 
+
+if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O'
+|| ch=='U' ) vowel++ ;
+else if(ch>='a' && ch<='z' || ch>='A' && ch<='Z') consonant++;
+else if(ch>='0' && ch<='9') digit++ ;
+else if (ch=' ') other++;
+i++;
+}
+
+letter++;
+
+}
+
+printf(" Vowel Counted = %d\n",vowel);
+
+printf(" Consonant Counted = %d\n",consonant); printf(" Digit Counted = %d\n",digit);
+printf(" Letters & Space Counted = %d\n",letter);
+printf(" Space & Special Character Counted = %d\n",other); return 0;
+}
+Output:
+ 
+
+ 
+ 
+
+Problem sove .cpp file list.
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+Thank You
+
+
+
+
+
+
+
+
+
